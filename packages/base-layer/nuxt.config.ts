@@ -1,4 +1,3 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 import { fileURLToPath } from 'node:url'
 import { dirname, join } from 'node:path'
 
@@ -11,14 +10,17 @@ export default defineNuxtConfig({
     },
   },
   devtools: { enabled: true },
-  modules: [
-    '@nuxtjs/tailwindcss',
-    [
-      'shadcn-nuxt',
-      {
-        prefix: undefined,
-        componentDir: './components/ui/',
-      },
-    ],
+  alias: {
+    '~': currentDir,
+  },
+  css: [join(currentDir, './assets/css/tailwind.css')],
+  components: [
+    {
+      path: './components/',
+      extensions: ['.vue'],
+      prefix: undefined,
+      pathPrefix: false,
+    },
   ],
+  modules: ['@nuxtjs/tailwindcss', 'shadcn-nuxt'],
 })
