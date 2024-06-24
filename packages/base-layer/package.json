@@ -12,12 +12,8 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxt/eslint-config": "^0.1.1",
-    "@nuxtjs/tailwindcss": "^6.12.0",
-    "eslint": "^8.28.0",
     "nuxt": "^3.6.2",
-    "shadcn-nuxt": "^0.10.4",
-    "typescript": "^4.9.5"
+    "shadcn-nuxt": "^0.10.4"
   },
   "dependencies": {
     "@radix-icons/vue": "^1.0.0",

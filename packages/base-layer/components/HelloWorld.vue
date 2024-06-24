@@ -9,16 +9,19 @@ import { cn } from '~/lib/utils'
 </script>
 
 <template>
-  <div class="flex-col items-center flex justify-center gap-4">
+  <div class="flex flex-col items-center justify-center gap-4">
     <TestComponent />
 
-    <h1 :class="cn('font-semibold text-xl text-green-600')">
+    <h1 :class="cn('text-xl font-semibold text-green-600')">
       {{ myLayer.name }}
     </h1>
+
     <div>{{ countLabel || 'Count Label' }}: {{ count }}</div>
+
     <Input
       v-model="countLabel"
       class="w-52"
+      name="aosidjofi asdoif oasid ofaisd ofiajsodjofa isdoifasdoi "
       placeholder="Name of Count Label"
     />
     <Button @click="count++"> Click me </Button>
